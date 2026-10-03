@@ -11,4 +11,3 @@ dependencies:
   - ncbi-datasets-cli
   - pandas
   - ncbi-amrfinderplus
-prefix: /home/oumaima/miniforge3/envs/amr
