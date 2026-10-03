@@ -1,6 +1,7 @@
 name: amr
 channels:
   - conda-forge
+  - bioconda
 dependencies:
   - jupyter
   - seqkit
