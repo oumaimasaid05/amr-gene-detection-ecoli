@@ -91,7 +91,7 @@ Counts are distinct determinants, with intrinsic genes excluded.
 5. **The two ST1193 strains have identical chromosomal mutation sets** (*marR* S3N, *gyrA* x2, *parC* S80I, *parE* L416F) although one is from river water and the other from a clinical sample. The mutations appear to follow the lineage, whereas acquired genes differ: AVS0096 has the ESBL `blaCTX-M-27`, MS10858 has `blaTEM-1` and `aac(3)-IId`.
 6. **Three strains carry extended-spectrum beta-lactamases:** EC958 (`blaCTX-M-15`, plus `blaOXA-1` and `blaCMY-23`), AVS0096 (`blaCTX-M-27`) and AR Bank #0349 (`blaCTX-M-55` and `blaCTX-M-14`). **No carbapenemase gene was found in any strain.**
 7. **AR Bank #0349 has the highest burden** (15 acquired genes, 11 classes), with most determinants on a single 278 kb plasmid, including `mcr-1.1` (colistin), `fosA3`, `floR` and two ESBL genes. It is the only strain with a colistin-resistance gene.
-8. **The negative controls are a useful baseline:** AMRFinderPlus reports 3 to 4 hits even in MG1655, but all are intrinsic chromosomal genes (`blaEC`, efflux), not acquired resistance.
+8. **The negative controls are a useful baseline:** AMRFinderPlus reports 3 to 4 hits even in the reference strains (3 in MG1655), but all are intrinsic chromosomal genes (`blaEC`, efflux), not acquired resistance.
 
 Genotype is not phenotype: all statements describe genes predicted to confer resistance.
 
@@ -120,10 +120,10 @@ conda activate amr && amrfinder -u
 datasets download genome accession --inputfile data/accessions.txt --include genome --filename data/genomes.zip
 # unzip, copy the .fna files to data/genomes/, download CARD data to data/card/
 amrfinder -n data/genomes/<id>.fna -O Escherichia --plus -o results/amrfinder/<id>.tsv   # each genome
-python scripts/analyze.py && python scripts/locations.py && python scripts/compare_tools.py
+bash scripts/run_pipeline.sh   # runs every step, in order
 ```
 
 ## References
 
-- Feldgarden M. et al. AMRFinderPlus and the Reference Gene Catalog. *Sci Rep* 2021.
-- Alcock B.P. et al. CARD. *Nucleic Acids Res*.
+- Feldgarden M. et al. (2021) AMRFinderPlus and the Reference Gene Catalog facilitate examination of the genomic links among antimicrobial resistance, stress response, and virulence. *Sci Rep* 11:12728.
+- Alcock B.P. et al. (2023) CARD 2023: expanded curation, support for machine learning, and resistome prediction at the Comprehensive Antibiotic Resistance Database. *Nucleic Acids Res* 51:D690-D699.

@@ -30,6 +30,5 @@ plt.savefig("results/figures/chromosome_vs_plasmid.png", dpi=300)
 
 print()
 for (s, ctg), d in a.sort_values("Start").groupby(["strain", "Contig id"]):
-    d = d.iloc[0:0].append(d) if False else d
     print(f"{s} | {ctg} | {d['length'].iloc[0]:,} bp | {d['location'].iloc[0]}")
     print("   " + "  ".join(f"{r['Element symbol']}@{int(r['Start'])}" for _, r in d.iterrows()))
