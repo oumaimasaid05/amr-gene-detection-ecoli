@@ -1,0 +1,8 @@
+data/ncbi_dataset/
+data/genomes.zip
+data/genomes/
+data/card/
+data/md5sum.txt
+data/README.md
+__pycache__/
+.ipynb_checkpoints/

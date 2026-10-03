@@ -1,0 +1,14 @@
+name: amr
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - seqkit
+  - matplotlib
+  - blast
+  - python=3.11
+  - seaborn
+  - ncbi-datasets-cli
+  - pandas
+  - ncbi-amrfinderplus
+prefix: /home/oumaima/miniforge3/envs/amr
