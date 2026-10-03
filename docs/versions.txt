@@ -1,0 +1,1 @@
+AMRFinderPlus 4.2.7; database 2026-08-07.1; BLAST 2.17.0; seqkit 2.14.0; NCBI datasets 18.38.0

@@ -1,0 +1,11 @@
+accession,strain,role
+GCF_000005845.2,K-12 MG1655,Lab reference / negative control
+GCF_000007445.1,CFT073,UPEC / low-resistance comparator
+GCF_017357505.1,ATCC 25922,Susceptibility reference strain
+GCF_000285655.3,EC958,MDR ST131 clinical isolate
+GCF_000245515.1,O55:H7 RM12579,EHEC-related / ancestral relative of O157:H7
+GCF_000008865.2,O157:H7 Sakai,EHEC
+GCF_000299255.1,O104:H4 2009EL-2050,EHEC outbreak strain / different lineage
+GCF_018798845.1,AVS0096,ST1193 / river water / blaCTX-M-27
+GCF_008152105.1,AR Bank #0349,mcr-1 on a plasmid
+GCF_030988725.1,MS10858,ST1193 / clinical
